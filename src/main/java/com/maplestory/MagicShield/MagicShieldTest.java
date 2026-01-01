@@ -13,15 +13,12 @@ public class MagicShieldTest {
         System.out.println(shield3);
 
         // 2. Test setters with valid values
-        System.out.println("Testing Setters with Valid Values");
         shield1.setRadius(1.2);
         shield1.setThickness(4.5);
         shield1.setElementType("Light");
         System.out.println(shield1);
 
         // 2. Test setters with invalid values (verify exceptions)
-        System.out.println("Testing Setters with Invalid Values");
-
         try {
             shield1.setRadius(-1.0);
         } catch (IllegalArgumentException e) {
@@ -35,7 +32,7 @@ public class MagicShieldTest {
         }
 
         // 3. Calculate and print defense power and mana cost
-        System.out.println("Shield 1 Defense Power: " + shield1.calculateDefensePower());
+        System.out.println("\nShield 1 Defense Power: " + shield1.calculateDefensePower());
         System.out.println("Shield 1 Mana Cost: " + shield1.calculateManaCost());
 
         System.out.println("Shield 2 Defense Power: " + shield2.calculateDefensePower());
@@ -64,7 +61,6 @@ public class MagicShieldTest {
         shield1.setElementType("");
         System.out.println("Element after empty input: " + shield1.getElementType() + "\n");
 
-        System.out.println("\n===== END OF TEST =====");
     }
 }
 

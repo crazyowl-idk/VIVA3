@@ -143,7 +143,7 @@ public class MagicShield {
             "Radius: %.1f m\n" +
             "Thickness: %.1f cm\n" +
             "Defense Power: %.2f\n" +
-            "Mana Cost: %.1f",
+            "Mana Cost: %.1f\n",
             elementType, radius, thickness, calculateDefensePower(), calculateManaCost()
         );
     }
